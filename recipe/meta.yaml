@@ -1,4 +1,4 @@
-{% set version = '0.14' %}
+{% set version = "0.14.1" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/moments_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/moments/moments_{{ version }}.tar.gz
-  sha256: 2a3b81e60dafdd092d2bdd3513d7038855ca7d113dc71df1229f7518382a3e39
+  sha256: 2ed2b84802da132ae0cf826a65de5bfa85042b82e086be844002fe1ce270d864
 
 build:
   noarch: generic
-  number: 1003
+  number: 0
 
   rpaths:
     - lib/R/lib/
@@ -36,12 +36,11 @@ test:
 about:
   home: http://www.r-project.org, http://www.komsta.net/
   license: GPL (>= 2)
-  summary: 'Functions to calculate: moments, Pearson''s kurtosis, Geary''s kurtosis and skewness;
-    tests related to them (Anscombe-Glynn, D''Agostino, Bonett-Seier).'
+  summary: "Functions to calculate: moments, Pearson's kurtosis, Geary's kurtosis and skewness; tests related to them (Anscombe-Glynn, D'Agostino, Bonett-Seier)."
 
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'   # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'   # [win]
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3  # [unix]
+  license_file: {{ environ["PREFIX"] }}\R\share\licenses\GPL-3  # [win]
 
 extra:
   recipe-maintainers:
