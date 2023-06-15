@@ -1,11 +1,11 @@
-About r-moments
-===============
+About r-moments-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-moments-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.r-project.org, http://www.komsta.net/
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-moments-feedstock/blob/main/LICENSE.txt)
 
 Summary: Functions to calculate: moments, Pearson's kurtosis, Geary's kurtosis and skewness; tests related to them (Anscombe-Glynn, D'Agostino, Bonett-Seier).
 
